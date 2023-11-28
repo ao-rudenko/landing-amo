@@ -111,7 +111,15 @@ div a img {
 .policy {
   text-decoration-line: underline;
 }
-@media (min-width: 321px) {
+.footer-menu {
+  color: #656566;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.7px;
+  margin-bottom: 20px;
+}
+@media (min-width: 480px) {
   body {
     width: 1140px;
     margin: 30px auto;
@@ -188,13 +196,7 @@ div a img {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .footer-menu {
-    color: #656566;
-    text-align: left;
     font: 700 14px 'Inter', sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    letter-spacing: 0.7px;
-    margin-bottom: 20px;
   }
   .footer-menu__contacts {
     display: flex;
@@ -231,9 +233,9 @@ div a img {
     flex-direction: row;
     justify-content: space-around;
   }
-  /* .footer-menu__menu div {
+  .footer-menu__menu div {
     width: 100%;
-  } */
+  }
   /* ---------------------------------------------BALLS------------------------------------------------------ */
   .purple-ball,
   .purple-ball * {
@@ -338,7 +340,7 @@ div a img {
   /* ---------------------------------------------BALLS------------------------------------------------------ */
 }
 
-@media (max-width: 480px) {
+@media (min-width: 260px) and (max-width: 480px) {
   body {
     width: 90%;
     margin: 0 auto;
@@ -419,6 +421,10 @@ div a img {
   }
   .footer-menu {
     margin-top: 45px;
+    font: 700 12px 'Inter', sans-serif;
+    color: #656566;
+    text-align: left;
+    text-transform: uppercase;
   }
 
   div a img {
@@ -433,6 +439,17 @@ div a img {
   .footer-menu__menu div {
     width: 90%;
   }
+  .footer-menu-right {
+    font: 700 14px 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+  .footer-menu__link {
+    color: #e4e5ea;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
   .footer-menu-right,
   .footer-contacts__link,
   .footer-menu-right__block {
